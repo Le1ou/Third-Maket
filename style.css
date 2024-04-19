@@ -1,0 +1,116 @@
+html
+{
+    box-sizing: border-box;
+}
+
+*, *:before, *::after
+{
+    box-sizing: inherit;
+}
+
+body
+{   
+    padding: 0;
+    margin: 0;
+    min-width: 320px;
+    font-family: 'TT Lakes';
+    background-color: #f8f8f8;
+    min-width: 0;
+}
+
+.services
+{
+    background: rgb(248, 248, 248);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    min-width: 0;
+}
+  
+.services__title-text
+{
+    color: rgb(126, 126, 130);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.services__title--padding
+{
+    padding: 16px;   
+}
+
+.services__swiper
+{
+    margin: 0 16px;
+    height: 110px;
+}
+
+.swiper-slide__item
+{
+    height: 72px;
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+}
+
+.swiper-slide__item img:first-child
+{
+    margin-left: 16px;
+}
+
+.swiper-slide__item img:last-child
+{
+    margin-right: 16px;
+}
+
+.services-button
+{
+    border: 0;
+    background-color: transparent;
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+.services__swiper-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.services__swiper
+{
+    height: initial;
+}
+
+.swiper-slide__item
+{
+    width: 224px;
+}
+
+.services-button
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    padding-top: 24px;
+    padding-left: 24px;
+    font-size: 16px;
+}
+
+.services__swiper--height
+{
+    height: 170px;
+}
+}
